@@ -25,7 +25,7 @@ SECRET_KEY = '=f%d^qq09hk*9c8kstlmx^uz38@_npdjasb2!+ri5)8t3s7lxd'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["127.0.0.1"]
+ALLOWED_HOSTS = ["127.0.0.1","thermalapi.herokuapp.com"]
 
 
 # Application definition

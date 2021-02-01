@@ -10,7 +10,7 @@ def send(sender,instance,created,**kwargs):
     print(json.dumps(serializer.data))
     # print(serializer.data.get("temp"))
     if created and float(serializer.data.get("temp"))>=99:
-        send_mail("from thermal section",'http://127.0.0.1:8000'+serializer.data.get("img"),"akshaymurari184@gmail.com",["akshaymurari184@gmail.com"],fail_silently=False)
+        send_mail("from thermal section",'https://thermalapi.herokuapp.com'+serializer.data.get("img"),"akshaymurari184@gmail.com",["akshaymurari184@gmail.com"],fail_silently=False)
 @receiver(post_delete,sender=User)
 def delete(sender,instance,**kwargs):
     created = False
